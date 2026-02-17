@@ -156,6 +156,8 @@
 					$("#nome").val(response.nome);
 					$("#idade").val(response.idade);
 					
+					$('#modalPesquisarUser').modal('hide');
+					
 				}
 			}).fail(function(xhr, status, errorThrown) {
 				alert("Erro ao buscar id do usuario: " + xhr.responseText);
